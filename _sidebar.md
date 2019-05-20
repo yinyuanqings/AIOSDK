@@ -4,9 +4,10 @@
   - [Launcher](Launcher.md)
 - [Rhino-X SDK](SDK.md)
   - [安装SDK](Install-SDK.md)
-  - [新手上路](GettingStarted.md)
+  - [第一个AR场景](GettingStarted.md)
   - [对象跟踪](ObjectTracking.md)
-- [开发接口 (API)](api.md)
-- [FAQ](faq.md)
-- [更新日志](changelogs.md)
+  - [控制器](Controller.md)
+  - [使用Beacon锚定地面](GroundPlane.md)
+- [API](API.md)
+
 
