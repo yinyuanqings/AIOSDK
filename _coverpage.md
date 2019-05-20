@@ -1,7 +1,8 @@
-![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/AIO_ID_0113.225.png ':size=750X500')
+![Logo](https://ximmerse-1253940012.cos.ap-guangzhou.myqcloud.com/slide-in-sdk/slide-in-ar-headset.png ':size=750x562')
 
-# Ximmerse Rhino-X AR 头显. </small>
+# Slide-In SDK 2.0.2</small>
 
+> SDK of an awesome AR headset.
 
-[SDK下载](https://github.com/Ximmerse/Rhino-X)
-[新手上路](#docs-README)
+[SDK Repo](https://github.com/Ximmerse/SlideInSDK/)
+[Getting Started](#docs)
