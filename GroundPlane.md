@@ -1,10 +1,10 @@
-## Ground Plane 
+## Ground Plane 组件
 
-在RhoniX SDK 启动以后， AR Camera 会实时的反映出用户头部所在的位置和姿态。但是这并不够。
+在 RhoniX SDK 启动以后， AR Camera 会实时的反映出用户头部所在的位置和姿态。但是有时候，这并不够。
 
-!> 开发者往往需要获取“地面”所在的平面。
+!> 开发者往往需要获取“地面”所在的平面，把头部的位置姿态归中到以地面点为中心的坐标系上。
 
-在本章教程中，我们将介绍如何使用 GroundPlane 组件，定义地面。
+在本章教程中，我们将介绍 GroundPlane 组件是如何定义地面的。
 
 
 - 打开 Assets/Demo/Scenes/DeerIsland 场景。
@@ -23,3 +23,5 @@
 > DebugView 则用于打开Debug 实时视图，方面开发者了解GroundPlane 的跟踪信息。
 
 - 编译并运行此场景，观察 GroundPlane 是怎样矫正头部相对于世界原点的位置和朝向。
+
+>! 地面组件在场景中

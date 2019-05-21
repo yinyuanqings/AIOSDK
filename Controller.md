@@ -23,7 +23,7 @@
 
 - Canvas - 一个标准的 UI canvas。 
 
-- Ximmerse-Controller 对象
+## RxController 组件
 
 ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/Controller-Unity.png ':size=450X400')
 
@@ -50,7 +50,7 @@
 
 
 
-- RxEventSystem 对象.
+## RxEventSystem 组件.
 
 ![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/RxEventSystem-Inspector.png ':size=450X400')
 
@@ -61,5 +61,44 @@
 !> RxEventSystem 事件继承于 UnityEngine.EventSystem 对象，与Unity自带的EventSystem对象冲突， 所以请删除unity自动创建的EventSystem对象(SDK程序会在运行时自动删除)
 
 
+## RxRaycast 组件
+
+![Logo](https://raw.githubusercontent.com/yinyuanqings/AIOSDK/gh-pages/img/RxRaycaster-Inspector.png ':size=450X400')
+
+> RxRaycast组件定义射线的起点和方向。 它可以和Unity内置的事件系统一起工作。
+> 设置 EventMask 和 Raycast Distance 以定义交互对象的层级和射线的长度。
+
+```bash
+//以下代码示例使用Unity的事件系统和RxController协同工作。 
+
+public class EventListenerDemo : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
+{
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        Debug.LogFormat(this, "Click : {0}", name);
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        Debug.LogFormat(this, "Down : {0}", name);
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        Debug.LogFormat(this, "Enter : {0}", name);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        Debug.LogFormat(this, "Exit : {0}", name);
+    }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        Debug.LogFormat(this, "Up : {0}", name);
+    }
+}
+            
+```
 
 - 我们已经知道了 Controller 的基本使用方式。 接下来请编译并安装 Controller UI 场景，体验使用 Controller 在AR场景中的交互方式吧 ！
